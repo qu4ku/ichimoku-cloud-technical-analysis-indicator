@@ -1,0 +1,22 @@
+* Ichimoku Cloud Technical Analysis Indicator
+Python implementation.
+** What Is the Ichimoku Cloud?
+The Ichimoku Cloud is a collection of technical indicators that show support and resistance levels, as well as momentum and trend direction. It does this by taking multiple averages and plotting them on a chart. It also uses these figures to compute a “cloud” that attempts to forecast where the price may find support or resistance in the future.
+
+** The Formulas for the Ichimoku Cloud
+*** Tenkan-sen (Conversion Line)
+  (Highest High + Lowest Low) / 2 for the preceding 9 periods
+
+*** Kijun-sen (Base Line)
+  (Highest High + Lowest Low) / 2 for the preceding 26 periods
+
+*** Senkou Span A (Leading Span A)
+  (Tenkan-sen + Kijun-sen) / 2 plotted 26 periods ahead
+
+*** Senkou Span B (Leading Span B)
+  (Highest High + Lowest Low) / 2 for the preceding 52 periods, plotted 26 periods ahead
+
+*** Chikou Span (Lagging Span)
+  Current Close plotted 26 periods behind
+
+The Tenkan-sen and Kijun-sen are used to generate trading signals, while the cloud and Chikou Span provide additional support and resistance levels, as well as trend confirmation.
